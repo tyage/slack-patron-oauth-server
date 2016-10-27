@@ -1,5 +1,5 @@
 {
-  "name": "Slack patron OAuth Server",
+  "name": "slack-patron-oauth-server",
   "version": "0.0.1",
   "description": "Slack patron OAuth Server",
   "engines": {
