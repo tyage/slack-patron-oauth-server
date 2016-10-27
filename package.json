@@ -1,7 +1,7 @@
 {
-  "name": "node-js-getting-started",
-  "version": "0.2.5",
-  "description": "A sample Node.js app using Express 4",
+  "name": "Slack patron OAuth Server",
+  "version": "0.0.1",
+  "description": "Slack patron OAuth Server",
   "engines": {
     "node": "5.9.1"
   },
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/heroku/node-js-getting-started"
+    "url": "https://github.com/tyage/slack-patron-oauth-server"
   },
   "keywords": [
     "node",

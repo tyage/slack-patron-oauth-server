@@ -1,1 +1,1 @@
-# Slack patron OAuth server
+# Slack patron OAuth Server
