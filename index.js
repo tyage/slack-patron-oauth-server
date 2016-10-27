@@ -1,7 +1,7 @@
-var express = require('express');
-var app = express();
-var WebClient = require('@slack/client').WebClient;
-var client = new WebClient();
+const express = require('express');
+const app = express();
+const WebClient = require('@slack/client').WebClient;
+const client = new WebClient();
 
 app.set('port', (process.env.PORT || 5000));
 
@@ -11,7 +11,7 @@ app.use(express.static(__dirname + '/public'));
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 
-app.get('/', function(request, response) {
+app.get('/', (request, response) => {
   client.oauth
     .access(process.env.SLACK_CLIENT_ID, process.env.SLACK_CLIENT_SECRET, request.query.code)
     .then(res => {
@@ -25,6 +25,6 @@ app.get('/', function(request, response) {
     });
 });
 
-app.listen(app.get('port'), function() {
+app.listen(app.get('port'), () => {
   console.log('Node app is running on port', app.get('port'));
 });
