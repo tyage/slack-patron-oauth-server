@@ -13,3 +13,10 @@ body {
   align-items: center;
   justify-content: center;
 }
+.flex-content {
+  text-align: center;
+}
+
+#install-title {
+  margin: 0 0 20px 0;
+}
