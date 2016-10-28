@@ -7,11 +7,23 @@
 <body>
 
 <div class="container">
-  <h1>Install slack patron</h1>
+  <h2>Install Slack patron</h2>
 
-  <p>See <a href="https://github.com/tyage/slack-patron">Github</a></p>
+  <h3>1. Clone Slack patron</h3>
+  <pre>$ git clone https://github.com/tyage/slack-patron
+$ cd slack-patron</pre>
 
-  <p>Set this to access_token: <code><%= accessToken %></code></p>
+  <h3>2. Configure</h3>
+  <p>Generate <code>config.yml</code></p>
+  <pre>$ ruby ./bin/init.rb --token=<%= accessToken %></pre>
+
+  <h3>3. Start with docker</h3>
+  <pre>$ docker-compose up -d
+$ open http://localhost:9292</pre>
+
+  <h3>4. Advance</h3>
+  <p>See <a href="https://github.com/tyage/slack-patron">Github</a> to get more information!</p>
+
 </div>
 
 </body>
