@@ -11,8 +11,8 @@
   },
   "dependencies": {
     "@slack/client": "^3.6.0",
-    "ejs": "2.4.1",
-    "express": "4.13.3"
+    "ejs": "2.5.7",
+    "express": "4.16.2"
   },
   "repository": {
     "type": "git",
