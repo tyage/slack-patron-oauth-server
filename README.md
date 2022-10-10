@@ -1,4 +1,7 @@
-# Slack patron OAuth Server
+# Slack Patron OAuth Server
 
-https://slack-patron.herokuapp.com/
-
+```
+$ export SLACK_CLIENT_ID=...
+$ export SLACK_CLIENT_SECRET=...
+$ yarn dev
+```
