@@ -7,8 +7,8 @@ type HomeProp = {
 };
 
 const Home: NextPage<HomeProp, {}> = ({ clientId }) => {
-  const permissions = "channels:history,team:read";
-  const link = `https://slack.com/oauth/v2/authorize?client_id=${encodeURIComponent(
+  const permissions = "client";
+  const link = `https://slack.com/oauth/authorize?client_id=${encodeURIComponent(
     clientId
   )}&scope=${encodeURIComponent(permissions)}`;
 

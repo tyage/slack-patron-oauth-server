@@ -34,7 +34,7 @@ export const getServerSideProps: GetServerSideProps<CallbackProp> = async ({
 }) => {
   const { code } = query;
 
-  const res = await new WebClient().oauth.v2.access({
+  const res = await new WebClient().oauth.access({
     client_id: process.env.SLACK_CLIENT_ID || "",
     client_secret: process.env.SLACK_CLIENT_SECRET || "",
     code: String(code),
